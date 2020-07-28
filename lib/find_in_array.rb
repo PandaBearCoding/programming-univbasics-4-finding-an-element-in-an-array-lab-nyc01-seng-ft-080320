@@ -1,13 +1,11 @@
-# The code below allows us to loop through an array using the while loop and .length to shuffle/iterate through each element and comparing each element to value_to_find (the value we want to find)
-
 def find_element_index(array, value_to_find)
   count = 0
+  found_value_index = nil
   while count < array.length do
-    puts array[count] == value_to_find
+    if array[count] == value_to_find
+      found_value_index = count
+    end
     count += 1
   end
+  found_value_index
 end
-
-#Now we must return the index
-
-
